@@ -2031,8 +2031,7 @@ select {
 .tk-zt{
   position: relative;
   .zt-cont{
-    width: 1076px;
-    height: 598px;
+    width: 1071px;
     background-color: #ffffff;
     border: solid 1px #e4e4e4;
     margin-bottom: 30px;
@@ -2068,7 +2067,6 @@ select {
     }
     .sign-in{
       @extend %clearfix;
-      border-bottom: 1px solid #eee;
       padding: 40px 0;
       input[type="submit"]{
         float: right;
@@ -2091,6 +2089,62 @@ select {
       	color: #ffffff;
       }
     }
+    .zt-parse{
+      border-top: 1px solid #eee;
+      .parse-sel{
+        font-size: 16px;
+        line-height: 36px;
+        color: #666666;
+        margin-bottom: 10px;
+        padding-top: 20px;
+        vertical-align: middle;
+        .icon{
+          @extend %in-b;
+          width: 16px; 
+          height: 16px;
+          background: url('../images/css_sprites.png') -10px -326px;
+          margin-right: 6px;
+          vertical-align: middle;
+        }
+        .error{
+          color: #ef544c;
+          margin-right: 30px;
+        }
+        .answer{
+          color: #237ce2;
+        }
+      }
+      .parse-txt{
+        font-size: 14px;
+        line-height: 30px;
+        color: #666666;
+        margin-bottom: 10px;
+        span{
+          @extend %in-b;
+          height: 22px;
+          line-height: 22px;
+          background-color: #237ce2;
+          border-radius: 4px;
+          padding-left: 8px;
+          color: #ffffff;
+          margin-right: 10px;
+        }
+      }
+      .parse-btn{
+        @extend %in-b;
+        height: 22px;
+        line-height: 22px;
+        border-radius: 4px;
+        border: solid 1px #237ce2;
+        color: $txt-color;
+        padding: 0 8px;
+        margin-left: 20px;
+        &:hover{
+          background-color: $txt-color;
+          color: #fff;
+        }
+      }
+    }
   }
   .zt-btn{
     @extend %in-b;
@@ -2106,7 +2160,7 @@ select {
     letter-spacing: 2px;
     position: absolute;
     top: 0;
-    right: 8px; // writing-mode:tb-rl 影响
+    right: 0px; // writing-mode:tb-rl 影响
     &::after{
       content: '';
       width: 0;
