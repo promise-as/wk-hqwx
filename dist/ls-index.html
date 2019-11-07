@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/index.css">
+
+  <script src="js/jquery-1.12.3.min.js"></script>
   <title>老师首页</title>
 </head>
+
 <body>
   <!-- 页眉 -->
   <div class="ns-topbar-wrap">
@@ -17,7 +21,7 @@
           <li>
             <i class="icon-kc"></i>
             <a href="">课程</a>|
-            <ol class="kc-detail">
+            <ol class="ns-menu kc-detail">
               <li>
                 <div class="detail-title">建筑工程</div>
                 <a href="">一级建造师</a>
@@ -93,10 +97,10 @@
           <li><a href="">每日一题</a>|</li>
           <li><a href="">考点精讲</a>|</li>
           <li><a href="">老师评价</a>|</li>
-          <li>
+          <li class="nav-zsfa">
             <i class="icon-program"></i>
             <a href="">招生方案</a>
-            <ol class="program-detail">
+            <ol class="ns-menu program-detail">
               <li class="detail-first">
                 <div class="detail-title"><i class="hot">HOT</i>热门考试</div>
                 <a href="">一级建造师</a>
@@ -162,7 +166,8 @@
       </div>
       <div class="ns-head-r">
         <div class="ns-search t_search">
-          <form id="search_one" class="clearfix" name="search_one" method="post" onsubmit="CheckForm(); return false;" target="_blank">
+          <form id="search_one" class="clearfix" name="search_one" method="post" onsubmit="CheckForm(); return false;"
+            target="_blank">
             <div class="ns-sel">
               <i class="sel-icon"></i>
               <select>
@@ -171,12 +176,13 @@
                 <option>老师</option>
               </select>
             </div>
-            <input name="text_one" type="text" id="text_one" class="search_text text" value="" placeholder="大家都在搜：一级建造师">
+            <input name="text_one" type="text" id="text_one" class="search_text text" value=""
+              placeholder="大家都在搜：一级建造师">
             <label for="submit_one">
               <i class="submit-icon"></i>
               <input type="submit" id="submit_one" name="submit_one" class="search_submit btn" value="搜索">
             </label>
-            
+
           </form>
         </div>
         <div class="head-nav">
@@ -234,6 +240,120 @@
         <li><a href="">一级建造师</a></li>
       </ul>
     </div>
+    <div class="ns-live-title">建设工程法规及相关知识</div>
+    <!--4.老师( 老师-首页 )-->
+    <div class="tx-module4 clearfix">
+      <ul class="clearfix">
+        <li class="clearfix">
+          <div class="tea-left">
+            <img src="images/tea-img1.png" alt="">
+            <span>王树京</span>
+          </div>
+          <div class="tea-right">
+            <p class="details">环球网校建工学院名誉院长，建筑资深导师，北京工业大学教授，建造师考试大纲编委会编委。参与过考试大纲...</p>
+            <p class="number">
+              <i class="icon icon_48"></i>
+              <span>第2讲：1A411000建筑设计与构造</span>
+            </p>
+            <p class="number">
+              <i class="icon icon_48"></i>
+              <span>第2讲：1A411000建筑设计与构造</span>
+            </p>
+            <a href="#" class="teacher-home">老师主页</a>
+          </div>
+        </li>
+        <li class="clearfix">
+          <div class="tea-left">
+            <img src="images/tea-img1.png" alt="">
+            <span>王树京</span>
+          </div>
+          <div class="tea-right">
+            <p class="details">环球网校建工学院名誉院长，建筑资深导师，北京工业大学教授，建造师考试大纲编委会编委。参与过考试大纲...</p>
+            <p class="number">
+              <i class="icon icon_48"></i>
+              <span>第2讲：1A411000建筑设计与构造</span>
+            </p>
+            <p class="number">
+              <i class="icon icon_48"></i>
+              <span>第2讲：1A411000建筑设计与构造</span>
+            </p>
+            <a href="#" class="teacher-home">老师主页</a>
+          </div>
+        </li>
+        <li class="clearfix">
+          <div class="tea-left">
+            <img src="images/tea-img1.png" alt="">
+            <span>王树京</span>
+          </div>
+          <div class="tea-right">
+            <p class="details">环球网校建工学院名誉院长，建筑资深导师，北京工业大学教授，建造师考试大纲编委会编委。参与过考试大纲...</p>
+            <p class="number">
+              <i class="icon icon_48"></i>
+              <span>第2讲：1A411000建筑设计与构造</span>
+            </p>
+            <p class="number">
+              <i class="icon icon_48"></i>
+              <span>第2讲：1A411000建筑设计与构造</span>
+            </p>
+            <a href="#" class="teacher-home">老师主页</a>
+          </div>
+        </li>
+        <li class="clearfix">
+          <div class="tea-left">
+            <img src="images/tea-img1.png" alt="">
+            <span>王树京</span>
+          </div>
+          <div class="tea-right">
+            <p class="details">环球网校建工学院名誉院长，建筑资深导师，北京工业大学教授，建造师考试大纲编委会编委。参与过考试大纲...</p>
+            <p class="number">
+              <i class="icon icon_48"></i>
+              <span>第2讲：1A411000建筑设计与构造</span>
+            </p>
+            <p class="number">
+              <i class="icon icon_48"></i>
+              <span>第2讲：1A411000建筑设计与构造</span>
+            </p>
+            <a href="#" class="teacher-home">老师主页</a>
+          </div>
+        </li>
+        <li class="clearfix">
+          <div class="tea-left">
+            <img src="images/tea-img1.png" alt="">
+            <span>王树京</span>
+          </div>
+          <div class="tea-right">
+            <p class="details">环球网校建工学院名誉院长，建筑资深导师，北京工业大学教授，建造师考试大纲编委会编委。参与过考试大纲...</p>
+            <p class="number">
+              <i class="icon icon_48"></i>
+              <span>第2讲：1A411000建筑设计与构造</span>
+            </p>
+            <p class="number">
+              <i class="icon icon_48"></i>
+              <span>第2讲：1A411000建筑设计与构造</span>
+            </p>
+            <a href="#" class="teacher-home">老师主页</a>
+          </div>
+        </li>
+        <li class="clearfix">
+          <div class="tea-left">
+            <img src="images/tea-img1.png" alt="">
+            <span>王树京</span>
+          </div>
+          <div class="tea-right">
+            <p class="details">环球网校建工学院名誉院长，建筑资深导师，北京工业大学教授，建造师考试大纲编委会编委。参与过考试大纲...</p>
+            <p class="number">
+              <i class="icon icon_48"></i>
+              <span>第2讲：1A411000建筑设计与构造</span>
+            </p>
+            <p class="number">
+              <i class="icon icon_48"></i>
+              <span>第2讲：1A411000建筑设计与构造</span>
+            </p>
+            <a href="#" class="teacher-home">老师主页</a>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <div class="ns-footer">
@@ -245,27 +365,27 @@
           </div>
           <ul class="clearfix">
             <li>
-              <a href=""> 
-                <img src="images/ns-icon_6.png" alt=""> 
-                <span>网校课程</span> 
+              <a href="">
+                <img src="images/ns-icon_6.png" alt="">
+                <span>网校课程</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <img src="images/ns-icon_7.png" alt=""> 
-                <span>试听中心</span> 
+              <a href="">
+                <img src="images/ns-icon_7.png" alt="">
+                <span>试听中心</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <img src="images/ns-icon_8.png" alt=""> 
-                <span>直播中心</span> 
+              <a href="">
+                <img src="images/ns-icon_8.png" alt="">
+                <span>直播中心</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <img src="images/ns-icon_9.png" alt=""> 
-                <span>考点精讲</span> 
+              <a href="">
+                <img src="images/ns-icon_9.png" alt="">
+                <span>考点精讲</span>
               </a>
             </li>
           </ul>
@@ -276,45 +396,45 @@
           </div>
           <ul class="clearfix">
             <li>
-              <a href=""> 
-                <span>优路网校</span> 
+              <a href="">
+                <span>优路网校</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <span>学天教育</span> 
+              <a href="">
+                <span>学天教育</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <span>在职研究生网</span> 
+              <a href="">
+                <span>在职研究生网</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <span>上海人才网</span> 
+              <a href="">
+                <span>上海人才网</span>
               </a>
             </li>
             <li>
-                <a href=""> 
-                  <span>培训吧</span> 
-                </a>
-              </li>
-              <li>
-                <a href=""> 
-                  <span>教育加盟</span> 
-                </a>
-              </li>
-              <li>
-                <a href=""> 
-                  <span>android培训</span> 
-                </a>
-              </li>
-              <li>
-                <a href=""> 
-                  <span>冷笑话</span> 
-                </a>
-              </li>
+              <a href="">
+                <span>培训吧</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>教育加盟</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>android培训</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>冷笑话</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -367,5 +487,8 @@
       </div>
     </div>
   </div>
+
+  <script src="js/index.js"></script>
 </body>
+
 </html>

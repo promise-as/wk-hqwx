@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/index.css">
+
+  <script src="js/jquery-1.12.3.min.js"></script>
   <title>老师终端</title>
 </head>
+
 <body>
   <!-- 页眉 -->
   <div class="ns-topbar-wrap">
@@ -17,7 +21,7 @@
           <li>
             <i class="icon-kc"></i>
             <a href="">课程</a>|
-            <ol class="kc-detail">
+            <ol class="ns-menu kc-detail">
               <li>
                 <div class="detail-title">建筑工程</div>
                 <a href="">一级建造师</a>
@@ -93,10 +97,10 @@
           <li><a href="">每日一题</a>|</li>
           <li><a href="">考点精讲</a>|</li>
           <li><a href="">老师评价</a>|</li>
-          <li>
+          <li class="nav-zsfa">
             <i class="icon-program"></i>
             <a href="">招生方案</a>
-            <ol class="program-detail">
+            <ol class="ns-menu program-detail">
               <li class="detail-first">
                 <div class="detail-title"><i class="hot">HOT</i>热门考试</div>
                 <a href="">一级建造师</a>
@@ -162,7 +166,8 @@
       </div>
       <div class="ns-head-r">
         <div class="ns-search t_search">
-          <form id="search_one" class="clearfix" name="search_one" method="post" onsubmit="CheckForm(); return false;" target="_blank">
+          <form id="search_one" class="clearfix" name="search_one" method="post" onsubmit="CheckForm(); return false;"
+            target="_blank">
             <div class="ns-sel">
               <i class="sel-icon"></i>
               <select>
@@ -171,12 +176,13 @@
                 <option>老师</option>
               </select>
             </div>
-            <input name="text_one" type="text" id="text_one" class="search_text text" value="" placeholder="大家都在搜：一级建造师">
+            <input name="text_one" type="text" id="text_one" class="search_text text" value=""
+              placeholder="大家都在搜：一级建造师">
             <label for="submit_one">
               <i class="submit-icon"></i>
               <input type="submit" id="submit_one" name="submit_one" class="search_submit btn" value="搜索">
             </label>
-            
+
           </form>
         </div>
         <div class="head-nav">
@@ -204,6 +210,949 @@
     </p>
   </div>
 
+  <!--5.老师简介( 老师-终端 )-->
+  <div class="tx-module5 wrap clearfix">
+    <div class="module5-left">
+      <div class="m-title">
+        <h3>环球网校 — 王树京</h3><span>TEACHER INTRODUCTION</span>
+      </div>
+      <p class="details">
+        环球网校建工学院名誉院长，建筑资深导师，北京工业大学教授，建造师考试大纲编委会编委。参与过考试大纲、辅导书、习题集等书籍的编写，发表论文及相关著作数十篇。具有10多年工程一线项目管理经验，理论与实践相结合，授课简练有深度，代入感极强，命题思路把握精准，考点分析透彻，有“得王树京得建筑实务”的评价。
+      </p>
+      <div class="zjkm clearfix">
+        <span class="span1">主讲科目：</span>
+        <span class="span2">建设工程项目管理、建设工程法规及相关知识、建筑工程管理与实务</span>
+      </div>
+      <div class="rmzb clearfix">
+        <span class="span1">热门直播：</span>
+        <p class="text-line">
+          <span class="span2">一级建造工程师直播公开课</span>
+          <span class="span3">9月26日 19：00</span>
+        </p>
+        <p class="text-line noright">
+          <span class="span2">一级建造工程师直播公开课</span>
+          <span class="span3">9月26日 19：00</span>
+        </p>
+      </div>
+    </div>
+    <div class="module5-right"><img src="images/max-teacher-img.png" alt=""></div>
+  </div>
+  <!--6.教学课程、试听课程、学员评价( 老师-终端 )-->
+  <div class="tx-module6 toggleMaxBox wrap clearfix">
+    <div class="course-classify clearfix">
+      <ul class="first-tag toggleTag">
+        <li>教学课程</li>
+        <li>试听课程</li>
+        <li>学员评价</li>
+      </ul>
+      <a href="#" class="zxzx"><i class="icon icon_50"></i>在线咨询</a>
+    </div>
+    <div class="course-det-box toggleShowBox clearfix">
+      <div class="course-details toggleMaxBox1 clearfix">
+        <ul class="second-tag clearfix toggleTag1">
+          <li>一级建造师1</li>
+          <li>二级建造师</li>
+          <li>造价工程师</li>
+          <li>消防工程师</li>
+          <li>监理工程师</li>
+          <li>安全工程师</li>
+          <li>咨询工程师</li>
+        </ul>
+        <div class="course-list toggleShowBox1 clearfix">
+          <ul class="max-list clearfix">
+            <li>
+              <p class="p1">11【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+          </ul>
+          <ul class="max-list clearfix">
+            <li>
+              <p class="p1">12【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+          </ul>
+          <ul class="max-list clearfix">
+            <li>
+              <p class="p1">13【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+          </ul>
+          <ul class="max-list clearfix">
+            <li>
+              <p class="p1">14【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+          </ul>
+          <ul class="max-list clearfix">
+            <li>
+              <p class="p1">15【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+          </ul>
+          <ul class="max-list clearfix">
+            <li>
+              <p class="p1">16【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+          </ul>
+          <ul class="max-list clearfix">
+            <li>
+              <p class="p1">17【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+            <li>
+              <p class="p1">【预测提分】临门一脚-秘笈课</p>
+              <p class="p2">一级建造师 1次课 / 共244小时</p>
+              <p class="p3">
+                <span>性价比高</span>
+                <span>教辅资料包邮</span>
+              </p>
+              <ul class="clearfix">
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+                <li>
+                  <div class="img-box"><img src="images/course-img.png" alt=""></div>
+                  <p>王树京</p>
+                </li>
+              </ul>
+              <a href="#" class="mfst">免费试听</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="course-details toggleMaxBox1 clearfix">
+        <ul class="second-tag clearfix toggleTag1">
+          <li>一级建造师1</li>
+          <li>二级建造师</li>
+          <li>造价工程师</li>
+          <li>消防工程师</li>
+          <li>监理工程师</li>
+          <li>安全工程师</li>
+          <li>咨询工程师</li>
+        </ul>
+        <div class="course-list toggleShowBox1 clearfix">
+          <div class="second-list clearfix">
+            <h3>建设工程项目管理</h3>
+            <ul class="clearfix">
+              <li class="clearfix">
+                <span class="span1">2K311011城镇道路分类（二）11</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">2K311011城镇道路分类（一）</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">2K311012沥青路面结构组成及性能要求</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">第2讲：2K311010城镇道路工程结构与材料(二)</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">第2讲：2K311010城镇道路工程结构与材料(二)</span>
+                <a href="#" class="st">试听</a>
+              </li>
+            </ul>
+          </div>
+          <div class="second-list clearfix">
+            <h3>建设工程项目管理</h3>
+            <ul class="clearfix">
+              <li class="clearfix">
+                <span class="span1">2K311011城镇道路分类（二）12</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">2K311011城镇道路分类（一）</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">2K311012沥青路面结构组成及性能要求</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">第2讲：2K311010城镇道路工程结构与材料(二)</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">第2讲：2K311010城镇道路工程结构与材料(二)</span>
+                <a href="#" class="st">试听</a>
+              </li>
+            </ul>
+          </div>
+          <div class="second-list clearfix">
+            <h3>建设工程项目管理</h3>
+            <ul class="clearfix">
+              <li class="clearfix">
+                <span class="span1">2K311011城镇道路分类（二）13</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">2K311011城镇道路分类（一）</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">2K311012沥青路面结构组成及性能要求</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">第2讲：2K311010城镇道路工程结构与材料(二)</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">第2讲：2K311010城镇道路工程结构与材料(二)</span>
+                <a href="#" class="st">试听</a>
+              </li>
+            </ul>
+          </div>
+          <div class="second-list clearfix">
+            <h3>建设工程项目管理</h3>
+            <ul class="clearfix">
+              <li class="clearfix">
+                <span class="span1">2K311011城镇道路分类（二）14</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">2K311011城镇道路分类（一）</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">2K311012沥青路面结构组成及性能要求</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">第2讲：2K311010城镇道路工程结构与材料(二)</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">第2讲：2K311010城镇道路工程结构与材料(二)</span>
+                <a href="#" class="st">试听</a>
+              </li>
+            </ul>
+          </div>
+          <div class="second-list clearfix">
+            <h3>建设工程项目管理</h3>
+            <ul class="clearfix">
+              <li class="clearfix">
+                <span class="span1">2K311011城镇道路分类（二）15</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">2K311011城镇道路分类（一）</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">2K311012沥青路面结构组成及性能要求</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">第2讲：2K311010城镇道路工程结构与材料(二)</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">第2讲：2K311010城镇道路工程结构与材料(二)</span>
+                <a href="#" class="st">试听</a>
+              </li>
+            </ul>
+          </div>
+          <div class="second-list clearfix">
+            <h3>建设工程项目管理</h3>
+            <ul class="clearfix">
+              <li class="clearfix">
+                <span class="span1">2K311011城镇道路分类（二）16</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">2K311011城镇道路分类（一）</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">2K311012沥青路面结构组成及性能要求</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">第2讲：2K311010城镇道路工程结构与材料(二)</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">第2讲：2K311010城镇道路工程结构与材料(二)</span>
+                <a href="#" class="st">试听</a>
+              </li>
+            </ul>
+          </div>
+          <div class="second-list clearfix">
+            <h3>建设工程项目管理</h3>
+            <ul class="clearfix">
+              <li class="clearfix">
+                <span class="span1">2K311011城镇道路分类（二）17</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">2K311011城镇道路分类（一）</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">2K311012沥青路面结构组成及性能要求</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">第2讲：2K311010城镇道路工程结构与材料(二)</span>
+                <a href="#" class="st">试听</a>
+              </li>
+              <li class="clearfix">
+                <span class="span1">第2讲：2K311010城镇道路工程结构与材料(二)</span>
+                <a href="#" class="st">试听</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="course-details clearfix">
+        <ul class="three-list clearfix">
+          <li>
+            <div class="three-top clearfix">
+              <span class="span-img"><img src="images/evaluate-img.png" alt=""></span>
+              <span class="span-name">清颜</span>
+              <span class="span-time">2019-08-26 16:36</span>
+              <p class="star"><img src="images/star.png" alt=""></p>
+            </div>
+            <div class="three-bottom clearfix">
+              <p>珊珊老师讲的好，记忆力好，讲的流畅自如。不用看屏幕也也讲的很快，说明功底厚。 技术实操部分个别地方再精研一下就更完美了。
+                如投标保证金，就不能说成是质保金。投标保证金是保证让投标人按招标规则去完成投标工作而设立的规则，若投标人不按规则完成投标工作，而对投标人的一种惩罚。质保金是在施工单位完成建设任务后，对其质量问题的进行修复的一种资金上的保证，所以用词要准确。
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="three-top clearfix">
+              <span class="span-img"><img src="images/evaluate-img.png" alt=""></span>
+              <span class="span-name">清颜</span>
+              <span class="span-time">2019-08-26 16:36</span>
+              <p class="star"><img src="images/star.png" alt=""></p>
+            </div>
+            <div class="three-bottom clearfix">
+              <p>珊珊老师讲的好，记忆力好，讲的流畅自如。不用看屏幕也也讲的很快，说明功底厚。 技术实操部分个别地方再精研一下就更完美了。
+                如投标保证金，就不能说成是质保金。投标保证金是保证让投标人按招标规则去完成投标工作而设立的规则，若投标人不按规则完成投标工作，而对投标人的一种惩罚。质保金是在施工单位完成建设任务后，对其质量问题的进行修复的一种资金上的保证，所以用词要准确。
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="three-top clearfix">
+              <span class="span-img"><img src="images/evaluate-img.png" alt=""></span>
+              <span class="span-name">清颜</span>
+              <span class="span-time">2019-08-26 16:36</span>
+              <p class="star"><img src="images/star.png" alt=""></p>
+            </div>
+            <div class="three-bottom clearfix">
+              <p>珊珊老师讲的好，记忆力好，讲的流畅自如。不用看屏幕也也讲的很快，说明功底厚。 技术实操部分个别地方再精研一下就更完美了。
+                如投标保证金，就不能说成是质保金。投标保证金是保证让投标人按招标规则去完成投标工作而设立的规则，若投标人不按规则完成投标工作，而对投标人的一种惩罚。质保金是在施工单位完成建设任务后，对其质量问题的进行修复的一种资金上的保证，所以用词要准确。
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <div class="ns-footer">
     <div class="wrap clearfix">
       <div class="ns-footer-l">
@@ -213,27 +1162,27 @@
           </div>
           <ul class="clearfix">
             <li>
-              <a href=""> 
-                <img src="images/ns-icon_6.png" alt=""> 
-                <span>网校课程</span> 
+              <a href="">
+                <img src="images/ns-icon_6.png" alt="">
+                <span>网校课程</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <img src="images/ns-icon_7.png" alt=""> 
-                <span>试听中心</span> 
+              <a href="">
+                <img src="images/ns-icon_7.png" alt="">
+                <span>试听中心</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <img src="images/ns-icon_8.png" alt=""> 
-                <span>直播中心</span> 
+              <a href="">
+                <img src="images/ns-icon_8.png" alt="">
+                <span>直播中心</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <img src="images/ns-icon_9.png" alt=""> 
-                <span>考点精讲</span> 
+              <a href="">
+                <img src="images/ns-icon_9.png" alt="">
+                <span>考点精讲</span>
               </a>
             </li>
           </ul>
@@ -244,45 +1193,45 @@
           </div>
           <ul class="clearfix">
             <li>
-              <a href=""> 
-                <span>优路网校</span> 
+              <a href="">
+                <span>优路网校</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <span>学天教育</span> 
+              <a href="">
+                <span>学天教育</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <span>在职研究生网</span> 
+              <a href="">
+                <span>在职研究生网</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <span>上海人才网</span> 
+              <a href="">
+                <span>上海人才网</span>
               </a>
             </li>
             <li>
-                <a href=""> 
-                  <span>培训吧</span> 
-                </a>
-              </li>
-              <li>
-                <a href=""> 
-                  <span>教育加盟</span> 
-                </a>
-              </li>
-              <li>
-                <a href=""> 
-                  <span>android培训</span> 
-                </a>
-              </li>
-              <li>
-                <a href=""> 
-                  <span>冷笑话</span> 
-                </a>
-              </li>
+              <a href="">
+                <span>培训吧</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>教育加盟</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>android培训</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>冷笑话</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -463,5 +1412,8 @@
       </div>
     </div>
   </div>
+
+  <script src="js/index.js"></script>
 </body>
+
 </html>

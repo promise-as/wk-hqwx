@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://img.thea.cn/public/qlppublic/swiper.min.css" rel="stylesheet" />
+
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="https://img.thea.cn/public/qlppublic/swiper.min.js"></script>
   <title>类别首页</title>
 </head>
+
 <body>
   <!-- 页眉 -->
   <div class="ns-topbar-wrap">
@@ -17,7 +23,7 @@
           <li>
             <i class="icon-kc"></i>
             <a href="">课程</a>|
-            <ol class="kc-detail">
+            <ol class="ns-menu kc-detail">
               <li>
                 <div class="detail-title">建筑工程</div>
                 <a href="">一级建造师</a>
@@ -93,10 +99,10 @@
           <li><a href="">每日一题</a>|</li>
           <li><a href="">考点精讲</a>|</li>
           <li><a href="">老师评价</a>|</li>
-          <li>
+          <li class="nav-zsfa">
             <i class="icon-program"></i>
             <a href="">招生方案</a>
-            <ol class="program-detail">
+            <ol class="ns-menu program-detail">
               <li class="detail-first">
                 <div class="detail-title"><i class="hot">HOT</i>热门考试</div>
                 <a href="">一级建造师</a>
@@ -162,7 +168,8 @@
       </div>
       <div class="ns-head-r">
         <div class="ns-search t_search">
-          <form id="search_one" class="clearfix" name="search_one" method="post" onsubmit="CheckForm(); return false;" target="_blank">
+          <form id="search_one" class="clearfix" name="search_one" method="post" onsubmit="CheckForm(); return false;"
+            target="_blank">
             <div class="ns-sel">
               <i class="sel-icon"></i>
               <select>
@@ -171,12 +178,13 @@
                 <option>老师</option>
               </select>
             </div>
-            <input name="text_one" type="text" id="text_one" class="search_text text" value="" placeholder="大家都在搜：一级建造师">
+            <input name="text_one" type="text" id="text_one" class="search_text text" value=""
+              placeholder="大家都在搜：一级建造师">
             <label for="submit_one">
               <i class="submit-icon"></i>
               <input type="submit" id="submit_one" name="submit_one" class="search_submit btn" value="搜索">
             </label>
-            
+
           </form>
         </div>
         <div class="head-nav">
@@ -227,6 +235,251 @@
   <div class="ns-newbie wrap" style="background-image: url('images/ns-banner_1.png')">
     <a href=""></a>
   </div>
+
+  <!-- qlp -->
+  <div class="box2 clearfix wrap">
+    <div class="fl">
+      <div class="ftt">
+        <div class="swiper-container" id="swiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ft">
+              <div class="txt border-r mr40">
+                <div class="txt1 clearfix">
+                  <h4>【预测提分】临门一脚-秘笈课</h4>
+                  <span>￥1900</span>
+                </div>
+                <div class="txt2 clearfix">
+                  <div class="span">
+                    <span>性价比高</span>
+                    <span>教辅资料包邮</span>
+                  </div>
+                  <a href="#">了解课程</a>
+                </div>
+              </div>
+              <div class="txt">
+                <div class="txt1 clearfix">
+                  <h4>【预测提分】临门一脚-秘笈课</h4>
+                  <span>￥1900</span>
+                </div>
+                <div class="txt2 clearfix">
+                  <div class="span">
+                    <span>性价比高</span>
+                    <span>教辅资料包邮</span>
+                  </div>
+                  <a href="#">了解课程</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide ft">
+              <div class="txt border-r mr40">
+                <div class="txt1 clearfix">
+                  <h4>【预测提分】临门一脚-秘笈课</h4>
+                  <span>￥1900</span>
+                </div>
+                <div class="txt2 clearfix">
+                  <div class="span">
+                    <span>性价比高</span>
+                    <span>教辅资料包邮</span>
+                  </div>
+                  <a href="#">了解课程</a>
+                </div>
+              </div>
+              <div class="txt">
+                <div class="txt1 clearfix">
+                  <h4>【预测提分】临门一脚-秘笈课</h4>
+                  <span>￥1900</span>
+                </div>
+                <div class="txt2 clearfix">
+                  <div class="span">
+                    <span>性价比高</span>
+                    <span>教辅资料包邮</span>
+                  </div>
+                  <a href="#">了解课程</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="iconfont swiper-button-prev swiper-button-prev1">&gt;</div>
+        <div class="iconfont swiper-button-next swiper-button-next1">&lt;</div>
+      </div>
+      <div class="fmm">
+        <div class="swiper-container" id="swiper2">
+          <div class="swiper-wrapper">
+            <div class="fm swiper-slide">
+              <h4 class="t">免费直播</h4>
+              <ul>
+                <li>
+                  <h4>一级建造工程师直播公开课<i>免费</i></h4>
+                  <p>老师：蔡 恒&nbsp; 时间：2019-9-26 19:00 预约人数：267</p>
+                  <a class="m" href="#">点击预约</a>
+                </li>
+                <li>
+                  <h4>一级建造工程师直播公开课<i>免费</i></h4>
+                  <p>老师：蔡 恒&nbsp; 时间：2019-9-26 19:00 预约人数：267</p>
+                  <a class="m" href="#">点击预约</a>
+                </li>
+                <li>
+                  <h4>一级建造工程师直播公开课<i>免费</i></h4>
+                  <p>老师：蔡 恒&nbsp; 时间：2019-9-26 19:00 预约人数：267</p>
+                  <a class="m" href="#">点击预约</a>
+                </li>
+              </ul>
+            </div>
+            <div class="fm swiper-slide">
+              <h4 class="t">免费直播</h4>
+              <ul>
+                <li>
+                  <h4>一级建造工程师直播公开课<i>免费</i></h4>
+                  <p>老师：蔡 恒&nbsp; 时间：2019-9-26 19:00 预约人数：267</p>
+                  <a class="m" href="#">点击预约</a>
+                </li>
+                <li>
+                  <h4>一级建造工程师直播公开课<i>免费</i></h4>
+                  <p>老师：蔡 恒&nbsp; 时间：2019-9-26 19:00 预约人数：267</p>
+                  <a class="m" href="#">点击预约</a>
+                </li>
+                <li>
+                  <h4>一级建造工程师直播公开课<i>免费</i></h4>
+                  <p>老师：蔡 恒 时间：2019-9-26 19:00 预约人数：267</p>
+                  <a class="m" href="#">点击预约</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="iconfont swiper-button-prev swiper-button-prev2">&gt;</div>
+        <div class="iconfont swiper-button-next swiper-button-next2">&lt;</div>
+      </div>
+
+      <div class="fb">
+        <div class="l">
+          <div class="call">
+            <h4>热门考点</h4>
+            <span>视频解析</span>
+          </div>
+          <ul>
+            <li><a href="#"> 一建工程法规考点：劳动合同订立的...</a><i><img src="images/icon_42.png"></i></li>
+            <li><a href="#"> 一建工程法规考点：劳动合同订立的...</a><i><img src="images/icon_42.png"></i></li>
+            <li><a href="#"> 一建工程法规考点：劳动合同订立的...</a><i><img src="images/icon_42.png"></i></li>
+          </ul>
+        </div>
+        <div class="r">
+          <ul>
+            <li>
+              <span><i class="i1">1</i>建设工程基本法律知识</span>
+              <a href="#">免费做题</a>
+            </li>
+            <li>
+              <span><i class="i2">2</i>建设工程基本法律知识</span>
+              <a href="#">免费做题</a>
+            </li>
+            <li>
+              <span><i class="i3">3</i>建设工程基本法律知识</span>
+              <a href="#">免费做题</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="fr">
+      <h4 class="t">网校名师</h4>
+      <div class="box">
+        <div class="swiper-container" id="swiper3">
+          <div class="swiper-wrapper">
+            <ul class="swiper-slide">
+              <li>
+                <div class="ut">
+                  <span><img src="images/9.png"></span>
+                  <div class="txt">
+                    <h4>王树京</h4>
+                    <p>环球网校建工学名誉院长，建筑资深导</p>
+                  </div>
+                </div>
+                <div class="a">
+                  <a href="#">第2讲：1A411000建筑设计...</a>
+                  <a href="#">第2讲：1A411000建筑设计...</a>
+                </div>
+              </li>
+              <li>
+                <div class="ut">
+                  <span><img src="images/9.png"></span>
+                  <div class="txt">
+                    <h4>王树京</h4>
+                    <p>环球网校建工学名誉院长，建筑资深导</p>
+                  </div>
+                </div>
+                <div class="a">
+                  <a href="#">第2讲：1A411000建筑设计...</a>
+                  <a href="#">第2讲：1A411000建筑设计...</a>
+                </div>
+              </li>
+              <li>
+                <div class="ut">
+                  <span><img src="images/9.png"></span>
+                  <div class="txt">
+                    <h4>王树京</h4>
+                    <p>环球网校建工学名誉院长，建筑资深导</p>
+                  </div>
+                </div>
+                <div class="a">
+                  <a href="#">第2讲：1A411000建筑设计...</a>
+                  <a href="#">第2讲：1A411000建筑设计...</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="swiper-slide">
+              <li>
+                <div class="ut">
+                  <span><img src="images/9.png"></span>
+                  <div class="txt">
+                    <h4>王树京</h4>
+                    <p>环球网校建工学名誉院长，建筑资深导</p>
+                  </div>
+                </div>
+                <div class="a">
+                  <a href="#">第2讲：1A411000建筑设计...</a>
+                  <a href="#">第2讲：1A411000建筑设计...</a>
+                </div>
+              </li>
+              <li>
+                <div class="ut">
+                  <span><img src="images/9.png"></span>
+                  <div class="txt">
+                    <h4>王树京</h4>
+                    <p>环球网校建工学名誉院长，建筑资深导</p>
+                  </div>
+                </div>
+                <div class="a">
+                  <a href="#">第2讲：1A411000建筑设计...</a>
+                  <a href="#">第2讲：1A411000建筑设计...</a>
+                </div>
+              </li>
+              <li>
+                <div class="ut">
+                  <span><img src="images/9.png"></span>
+                  <div class="txt">
+                    <h4>王树京</h4>
+                    <p>环球网校建工学名誉院长，建筑资深导</p>
+                  </div>
+                </div>
+                <div class="a">
+                  <a href="#">第2讲：1A411000建筑设计...</a>
+                  <a href="#">第2讲：1A411000建筑设计...</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="iconfont swiper-button-prev swiper-button-prev3">&lt;</div>
+        <div class="iconfont swiper-button-next swiper-button-next3">&gt;</div>
+      </div>
+
+      <div class="linear"></div>
+    </div>
+  </div>
+
   <div class="ns-zs ns-type">
     <div class="type-title">
       二级建造师招生方案
@@ -332,7 +585,7 @@
           <div class="row-col">
             <div class="row-bz">
               <div class="bz-l">
-                <span>当年考试不过，第二年免费重学</span>  
+                <span>当年考试不过，第二年免费重学</span>
                 <a href="">【点击查看协议】</a>
               </div>
               <div class="bz-r"></div>
@@ -341,7 +594,7 @@
           <div class="row-col">
             <div class="row-bz">
               <div class="bz-l">
-                <span>当年考试不过，第二年免费重学</span>  
+                <span>当年考试不过，第二年免费重学</span>
                 <a href="">【点击查看协议】</a>
               </div>
               <div class="bz-r"></div>
@@ -394,9 +647,144 @@
   <div class="ns-jy wrap">
     <img src="images/ns-banner_2.png" alt="">
   </div>
+
+  <div class="box3 wrap">
+    <div class="t clearfix">
+      <h4>考点精选</h4>
+      <span class="jt"></span>
+      <ul class="list">
+        <li><a href="#">建设工程经济</a></li>
+        <li><a href="#">建设工程经济</a></li>
+        <li><a href="#">建设工程经济</a></li>
+        <li><a href="#">建设工程经济</a></li>
+        <li><a href="#">建设工程经济</a></li>
+        <li><a href="#">建设工程经济</a></li>
+      </ul>
+      <div class="xl">
+        <span class="sj"></span>
+        <ul class="list">
+          <li><a href="#">建设工程经济</a></li>
+          <li><a href="#">建设工程经济</a></li>
+          <li><a href="#">建设工程经济</a></li>
+          <li><a href="#">建设工程经济</a></li>
+          <li><a href="#">建设工程经济</a></li>
+          <li><a href="#">建设工程经济</a></li>
+          <li><a href="#">建设工程法规及相关知识</a></li>
+          <li><a href="#">建设工程经济</a></li>
+          <li><a href="#">建设工程经济</a></li>
+          <li><a href="#">建设工程经济</a></li>
+          <li><a href="#">建设工程经济</a></li>
+          <li><a href="#">建设工程经济</a></li>
+          <li><a href="#">建设工程经济</a></li>
+          <li><a href="#">建设工程经济</a></li>
+          <li><a href="#">建设工程经济</a></li>
+          <li><a href="#">建设工程经济</a></li>
+          <li><a href="#">建设工程法规及相关知识</a></li>
+          <li><a href="#">建设工程法规及相关知识</a></li>
+          <li><a href="#">建设工程经济</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="m">
+      <ul>
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+        <li><a href="#">重庆市取消二级建造师临时执业证</a><span>10-29</span></li>
+      </ul>
+    </div>
+    <div class="b">
+      <ul>
+        <h4>最新资讯</h4>
+        <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+        <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+        <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+        <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+        <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+        <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+      </ul>
+      <ul>
+        <h4>快问快答</h4>
+        <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+        <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+        <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+        <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+        <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+        <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+      </ul>
+      <div class="rk">
+        <a href="#"><img src="images/12.png"></a>
+        <a href="#"><img src="images/13.png"></a>
+      </div>
+    </div>
+  </div>
+
   <div class="ns-jy wrap">
     <img src="images/ns-banner_2.png" alt="">
   </div>
+
+  <div class="box4 clearfix wrap">
+    <ul class="list">
+      <h4>报考指南</h4>
+      <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+      <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+      <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+      <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+      <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+      <li><a href="#">二建公路实务哪位老师讲得好</a><span>10-29</span></li>
+    </ul>
+    <div class="fr">
+      <form class="sign-in">
+        <h4>报考资格预审</h4>
+        <select>
+          <option>学历</option>
+          <option>初中</option>
+          <option>高中</option>
+          <option>大专</option>
+          <option>本科</option>
+        </select>
+        <input type="text" class="user-con" placeholder="毕业专业" />
+        <input type="text" class="user-con" placeholder="毕业年限" />
+        <input type="text" class="user-name" placeholder="怎么称呼" />
+        <input type="text" class="user-tel" placeholder="联系方式" />
+        <input class="btn" type="submit" placeholder="联系方式" />
+      </form>
+      <div class="bk">
+        <h4>报考必读</h4>
+        <ul>
+          <li><a href="#">报名时间</a></li>
+          <li><a href="#">报名时间</a></li>
+          <li><a href="#">报名时间</a></li>
+          <li><a href="#">报名时间</a></li>
+          <li><a href="#">报名时间</a></li>
+
+          <li><a href="#">报名时间</a></li>
+          <li><a href="#">报名时间</a></li>
+          <li><a href="#">报名时间</a></li>
+          <li><a href="#">报名时间</a></li>
+          <li><a href="#">报名时间</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <div class="ns-footer">
     <div class="wrap clearfix">
       <div class="ns-footer-l">
@@ -406,27 +794,27 @@
           </div>
           <ul class="clearfix">
             <li>
-              <a href=""> 
-                <img src="images/ns-icon_6.png" alt=""> 
-                <span>网校课程</span> 
+              <a href="">
+                <img src="images/ns-icon_6.png" alt="">
+                <span>网校课程</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <img src="images/ns-icon_7.png" alt=""> 
-                <span>试听中心</span> 
+              <a href="">
+                <img src="images/ns-icon_7.png" alt="">
+                <span>试听中心</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <img src="images/ns-icon_8.png" alt=""> 
-                <span>直播中心</span> 
+              <a href="">
+                <img src="images/ns-icon_8.png" alt="">
+                <span>直播中心</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <img src="images/ns-icon_9.png" alt=""> 
-                <span>考点精讲</span> 
+              <a href="">
+                <img src="images/ns-icon_9.png" alt="">
+                <span>考点精讲</span>
               </a>
             </li>
           </ul>
@@ -437,45 +825,45 @@
           </div>
           <ul class="clearfix">
             <li>
-              <a href=""> 
-                <span>优路网校</span> 
+              <a href="">
+                <span>优路网校</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <span>学天教育</span> 
+              <a href="">
+                <span>学天教育</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <span>在职研究生网</span> 
+              <a href="">
+                <span>在职研究生网</span>
               </a>
             </li>
             <li>
-              <a href=""> 
-                <span>上海人才网</span> 
+              <a href="">
+                <span>上海人才网</span>
               </a>
             </li>
             <li>
-                <a href=""> 
-                  <span>培训吧</span> 
-                </a>
-              </li>
-              <li>
-                <a href=""> 
-                  <span>教育加盟</span> 
-                </a>
-              </li>
-              <li>
-                <a href=""> 
-                  <span>android培训</span> 
-                </a>
-              </li>
-              <li>
-                <a href=""> 
-                  <span>冷笑话</span> 
-                </a>
-              </li>
+              <a href="">
+                <span>培训吧</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>教育加盟</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>android培训</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>冷笑话</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -655,5 +1043,29 @@
       </div>
     </div>
   </div>
+
+  <script>
+    var swiper1 = new Swiper('#swiper1', {
+      navigation: {
+        nextEl: '.swiper-button-next1',
+        prevEl: '.swiper-button-prev1',
+      },
+    })
+    var swiper2 = new Swiper('#swiper2', {
+      navigation: {
+        nextEl: '.swiper-button-next2',
+        prevEl: '.swiper-button-prev2',
+      },
+    })
+    var swiper3 = new Swiper('#swiper3', {
+      direction: 'vertical',
+      navigation: {
+        nextEl: '.swiper-button-next3',
+        prevEl: '.swiper-button-prev3',
+      },
+    })
+  </script>
+  <script src="js/index.js"></script>
 </body>
+
 </html>
