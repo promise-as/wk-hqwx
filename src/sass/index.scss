@@ -352,7 +352,7 @@ i {
     margin-top: 20px;
   }
 }
-.ns-live {
+.ns-ad {
   padding-bottom: 30px;
   ul {
     margin-right: -16px;
@@ -360,7 +360,7 @@ i {
   li {
     width: 356px;
     height: 80px;
-    // float: left;
+    float: left;
     margin-right: 16px;
   }
   a {
@@ -2388,6 +2388,7 @@ i {
       > li {
         width: 248px;
         // height: 300px;
+        font-size: 14px;
         background-color: #ffffff;
         border: solid 1px #e4e4e4;
         padding: 20px;
@@ -2500,6 +2501,7 @@ i {
     }
     .box1-c3 {
       ul {
+        font-size: 14px;
         margin-top: 30px;
         @extend %align;
         display: none;
@@ -3026,6 +3028,7 @@ i {
   .t {
     position: relative;
     h4 {
+      font-weight: bold;
       font-size: 18px;
       position: relative;
       padding-left: 15px;
@@ -3044,6 +3047,7 @@ i {
     }
     .list {
       float: right;
+      font-size: 14px;
       li {
         float: left;
         margin-left: 20px;
@@ -3102,6 +3106,7 @@ i {
     }
   }
   .m {
+    font-size: 14px;
     ul {
       margin-top: 30px;
       @extend %align;
@@ -3149,6 +3154,7 @@ i {
       padding: 20px;
       box-sizing: border-box;
       h4 {
+        font-weight: bold;
         font-size: 18px;
         position: relative;
         padding-left: 15px;
@@ -3166,6 +3172,7 @@ i {
         }
       }
       li {
+        font-size: 14px;
         margin: 16px 0px;
         overflow: hidden;
         a {
@@ -3216,6 +3223,7 @@ i {
     box-sizing: border-box;
     float: left;
     h4 {
+      font-weight: bold;
       font-size: 18px;
       position: relative;
       padding-left: 15px;
@@ -3233,6 +3241,7 @@ i {
       }
     }
     li {
+      font-size: 14px;
       margin: 16px 0px;
       overflow: hidden;
       a {
@@ -3264,6 +3273,7 @@ i {
   }
   .fr {
     width: 705px;
+    font-size: 14px;
     form {
       background: url(../images/14.png) no-repeat center;
       width: 100%;
@@ -3272,6 +3282,7 @@ i {
       box-sizing: border-box;
       text-align: center;
       h4 {
+        font-weight: bold;
         font-size: 18px;
         position: relative;
         padding-left: 15px;
@@ -3290,18 +3301,18 @@ i {
         }
       }
       select {
-        option {
-          text-align: center;
-          text-align-last: center;
-        }
+        padding: 0 20px;
+        box-sizing: border-box;
+        background: url(../images/icon_4.png) no-repeat 70%;
       }
       select,
       input {
-        text-align-last: center;
-        width: 104px;
+        width: 90px;
         height: 38px;
         border: solid 1px #e4e4e4;
         text-align: center;
+        margin-right: 10px;
+        text-indent: 0;
       }
       .btn {
         background-image: linear-gradient(135deg, #f6c51c 0%, #ef544c 100%), linear-gradient(#237ce2, #237ce2);
@@ -3316,6 +3327,7 @@ i {
     .bk {
       margin-top: 24px;
       h4 {
+        font-weight: bold;
         font-size: 18px;
         position: relative;
         padding-left: 15px;
@@ -3394,6 +3406,7 @@ i {
       margin-top: 20px;
       li {
         float: left;
+        font-size: 14px;
         a {
           &:hover {
             color: #237ce2;
@@ -3414,6 +3427,7 @@ i {
         overflow: hidden;
         width: 28%;
         a {
+          font-size: 14px;
           color: #333;
           position: relative;
           float: left;

@@ -119,15 +119,15 @@ i { font-style: normal; }
 
 .ns-newbie a { display: block; width: 146px; height: 42px; float: right; margin-right: 12px; margin-top: 20px; }
 
-.ns-live { padding-bottom: 30px; }
+.ns-ad { padding-bottom: 30px; }
 
-.ns-live ul { margin-right: -16px; }
+.ns-ad ul { margin-right: -16px; }
 
-.ns-live li { width: 356px; height: 80px; margin-right: 16px; }
+.ns-ad li { width: 356px; height: 80px; float: left; margin-right: 16px; }
 
-.ns-live a { display: block; width: 100%; height: 100%; }
+.ns-ad a { display: block; width: 100%; height: 100%; }
 
-.ns-live img { width: 100%; height: 100%; }
+.ns-ad img { width: 100%; height: 100%; }
 
 .ns-footer { height: 314px; background-color: #eeeeee; border-top: 1px solid #e4e4e4; border-bottom: 1px solid #e4e4e4; padding-top: 30px; }
 
@@ -788,7 +788,7 @@ i { font-style: normal; }
 
 .box1 .box1-c .ul.cur { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.box1 .box1-c .ul > li { width: 248px; background-color: #ffffff; border: solid 1px #e4e4e4; padding: 20px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.box1 .box1-c .ul > li { width: 248px; font-size: 14px; background-color: #ffffff; border: solid 1px #e4e4e4; padding: 20px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .box1 .box1-c .ul > li .t { color: #333; font-size: 16px; font-weight: bold; display: block; }
 
@@ -820,7 +820,7 @@ i { font-style: normal; }
 
 .box1 .box1-c2 .list li.active { position: relative; top: 1px; color: #237ce2; font-size: 16px; font-weight: bold; border-top: 3px solid #237ce2; border-left: 1px solid #e4e4e4; border-right: 1px solid #e4e4e4; }
 
-.box1 .box1-c2 .box1-c3 ul { margin-top: 30px; display: none; }
+.box1 .box1-c2 .box1-c3 ul { font-size: 14px; margin-top: 30px; display: none; }
 
 .box1 .box1-c2 .box1-c3 ul.active { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -986,11 +986,11 @@ i { font-style: normal; }
 
 .box3 .t { position: relative; }
 
-.box3 .t h4 { font-size: 18px; position: relative; padding-left: 15px; float: left; }
+.box3 .t h4 { font-weight: bold; font-size: 18px; position: relative; padding-left: 15px; float: left; }
 
 .box3 .t h4:after { content: ""; width: 4px; height: 18px; background-image: -webkit-gradient(linear, left top, left bottom, from(#13befd), to(#237ce2)), -webkit-gradient(linear, left top, left bottom, from(#237ce2), to(#237ce2)); background-image: linear-gradient(180deg, #13befd 0%, #237ce2 100%), linear-gradient(#237ce2, #237ce2); background-blend-mode: normal, normal; border-radius: 2px; position: absolute; top: 2px; left: 0; }
 
-.box3 .t .list { float: right; }
+.box3 .t .list { float: right; font-size: 14px; }
 
 .box3 .t .list li { float: left; margin-left: 20px; }
 
@@ -1014,6 +1014,8 @@ i { font-style: normal; }
 
 .box3 .t .xl .list li a:hover { color: #237ce2; }
 
+.box3 .m { font-size: 14px; }
+
 .box3 .m ul { margin-top: 30px; }
 
 .box3 .m ul.active { display: -webkit-box; display: -ms-flexbox; display: flex; }
@@ -1030,11 +1032,11 @@ i { font-style: normal; }
 
 .box3 .b ul { width: 365px; height: 282px; border: solid 1px #e4e4e4; padding: 20px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.box3 .b ul h4 { font-size: 18px; position: relative; padding-left: 15px; margin-bottom: 20px; }
+.box3 .b ul h4 { font-weight: bold; font-size: 18px; position: relative; padding-left: 15px; margin-bottom: 20px; }
 
 .box3 .b ul h4:after { content: ""; width: 4px; height: 18px; background-image: -webkit-gradient(linear, left top, left bottom, from(#13befd), to(#237ce2)), -webkit-gradient(linear, left top, left bottom, from(#237ce2), to(#237ce2)); background-image: linear-gradient(180deg, #13befd 0%, #237ce2 100%), linear-gradient(#237ce2, #237ce2); background-blend-mode: normal, normal; border-radius: 2px; position: absolute; top: 2px; left: 0; }
 
-.box3 .b ul li { margin: 16px 0px; overflow: hidden; }
+.box3 .b ul li { font-size: 14px; margin: 16px 0px; overflow: hidden; }
 
 .box3 .b ul li a { color: #333; position: relative; float: left; padding-left: 14px; width: 240px; }
 
@@ -1054,11 +1056,11 @@ i { font-style: normal; }
 
 .box4 .list { width: 365px; height: 282px; border: solid 1px #e4e4e4; padding: 20px; -webkit-box-sizing: border-box; box-sizing: border-box; float: left; }
 
-.box4 .list h4 { font-size: 18px; position: relative; padding-left: 15px; margin-bottom: 20px; }
+.box4 .list h4 { font-weight: bold; font-size: 18px; position: relative; padding-left: 15px; margin-bottom: 20px; }
 
 .box4 .list h4:after { content: ""; width: 4px; height: 18px; background-image: -webkit-gradient(linear, left top, left bottom, from(#13befd), to(#237ce2)), -webkit-gradient(linear, left top, left bottom, from(#237ce2), to(#237ce2)); background-image: linear-gradient(180deg, #13befd 0%, #237ce2 100%), linear-gradient(#237ce2, #237ce2); background-blend-mode: normal, normal; border-radius: 2px; position: absolute; top: 2px; left: 0; }
 
-.box4 .list li { margin: 16px 0px; overflow: hidden; }
+.box4 .list li { font-size: 14px; margin: 16px 0px; overflow: hidden; }
 
 .box4 .list li a { color: #333; position: relative; float: left; padding-left: 14px; width: 240px; }
 
@@ -1068,23 +1070,23 @@ i { font-style: normal; }
 
 .box4 .list li span { font-size: 14px; color: #888; float: right; }
 
-.box4 .fr { width: 705px; }
+.box4 .fr { width: 705px; font-size: 14px; }
 
 .box4 .fr form { background: url(../images/14.png) no-repeat center; width: 100%; height: 118px; padding: 20px; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: center; }
 
-.box4 .fr form h4 { font-size: 18px; position: relative; padding-left: 15px; margin-bottom: 20px; text-align: left; }
+.box4 .fr form h4 { font-weight: bold; font-size: 18px; position: relative; padding-left: 15px; margin-bottom: 20px; text-align: left; }
 
 .box4 .fr form h4:after { content: ""; width: 4px; height: 18px; background-image: -webkit-gradient(linear, left top, left bottom, from(#13befd), to(#237ce2)), -webkit-gradient(linear, left top, left bottom, from(#237ce2), to(#237ce2)); background-image: linear-gradient(180deg, #13befd 0%, #237ce2 100%), linear-gradient(#237ce2, #237ce2); background-blend-mode: normal, normal; border-radius: 2px; position: absolute; top: 2px; left: 0; }
 
-.box4 .fr form select option { text-align: center; -moz-text-align-last: center; text-align-last: center; }
+.box4 .fr form select { padding: 0 20px; -webkit-box-sizing: border-box; box-sizing: border-box; background: url(../images/icon_4.png) no-repeat 70%; }
 
-.box4 .fr form select, .box4 .fr form input { -moz-text-align-last: center; text-align-last: center; width: 104px; height: 38px; border: solid 1px #e4e4e4; text-align: center; }
+.box4 .fr form select, .box4 .fr form input { width: 90px; height: 38px; border: solid 1px #e4e4e4; text-align: center; margin-right: 10px; text-indent: 0; }
 
 .box4 .fr form .btn { background-image: linear-gradient(135deg, #f6c51c 0%, #ef544c 100%), linear-gradient(#237ce2, #237ce2); background-blend-mode: normal, normal; border: none; color: #fff; font-weight: bold; -webkit-box-shadow: 0px 3px 5px 0px rgba(239, 84, 76, 0.4); box-shadow: 0px 3px 5px 0px rgba(239, 84, 76, 0.4); border-radius: 6px; }
 
 .box4 .fr .bk { margin-top: 24px; }
 
-.box4 .fr .bk h4 { font-size: 18px; position: relative; padding-left: 15px; margin-bottom: 20px; text-align: left; }
+.box4 .fr .bk h4 { font-weight: bold; font-size: 18px; position: relative; padding-left: 15px; margin-bottom: 20px; text-align: left; }
 
 .box4 .fr .bk h4:after { content: ""; width: 4px; height: 18px; background-image: -webkit-gradient(linear, left top, left bottom, from(#13befd), to(#237ce2)), -webkit-gradient(linear, left top, left bottom, from(#237ce2), to(#237ce2)); background-image: linear-gradient(180deg, #13befd 0%, #237ce2 100%), linear-gradient(#237ce2, #237ce2); background-blend-mode: normal, normal; border-radius: 2px; position: absolute; top: 2px; left: 0; }
 
@@ -1108,7 +1110,7 @@ i { font-style: normal; }
 
 .box5 .m ul { margin-top: 20px; }
 
-.box5 .m ul li { float: left; }
+.box5 .m ul li { float: left; font-size: 14px; }
 
 .box5 .m ul li a:hover { color: #237ce2; }
 
@@ -1118,7 +1120,7 @@ i { font-style: normal; }
 
 .box5 .b ul li { margin-bottom: 20px; overflow: hidden; width: 28%; }
 
-.box5 .b ul li a { color: #333; position: relative; float: left; padding-left: 14px; width: 240px; }
+.box5 .b ul li a { font-size: 14px; color: #333; position: relative; float: left; padding-left: 14px; width: 240px; }
 
 .box5 .b ul li a:hover { color: #237ce2; }
 

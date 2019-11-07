@@ -2,9 +2,9 @@ $(function () {
   /* 顶部导航菜单 */
   function headerNavMenu() {
     $(".nav-list li").hover(function () {
-      $(this).find(".ns-menu").stop(true, false).slideDown();
+      $(this).find(".ns-menu").stop(true, false).show();
     }, function () {
-      $(this).find(".ns-menu").stop(true, false).slideUp();
+      $(this).find(".ns-menu").stop(true, false).hide();
     });
   }
   headerNavMenu();
