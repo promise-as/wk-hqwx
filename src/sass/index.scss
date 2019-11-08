@@ -122,7 +122,6 @@ i {
     }
   }
   .ns-menu {
-    display: none;
     width: 1038px;
     padding: 30px 30px 10px;
     font-size: 16px;
@@ -134,6 +133,9 @@ i {
     border-left: 1px solid #e4e4e4;
     border-right: 1px solid #e4e4e4;
     border-bottom: 1px solid #e4e4e4;
+  }
+  .hide {
+    display: none;
   }
   .kc-detail {
     li {
@@ -337,6 +339,70 @@ i {
       &:hover {
         color: $txt-color;
         cursor: pointer;
+      }
+    }
+  }
+}
+/* 热门搜索 */
+.ns-rm {
+  position: absolute;
+  width: 368px;
+  height: 122px;
+  background-color: #ffffff;
+  border: solid 1px #d7d7d7;
+  padding: 12px 10px;
+  display: none;
+  a {
+    display: block;
+    padding-left: 10px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    color: #666666;
+    &:hover{
+      background-color: #eeeeee;
+    }
+    &::before{
+      @extend %in-b;
+      content: '1';
+      width: 14px;
+      height: 14px;
+      line-height: 14px;
+      font-size: 12px;
+      background-color: #ef544c;
+      text-align: center;
+      color: #fff;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    
+  }
+  li{
+    &:nth-of-type(2){
+      a{
+        &:before{
+          content: '2';
+          background-color: #2db687;
+        }
+        
+      }
+    }
+    &:nth-of-type(3){
+      a{
+        &:before{
+          content: '3';
+          background-color: #237ce2;
+        }
+        
+      }
+    }
+    &:nth-of-type(4){
+      a{
+        &:before{
+          content: '4';
+          background-color: #a0a0a0;
+        }
+        
       }
     }
   }
@@ -856,6 +922,7 @@ i {
           span {
             @extend %in-b;
             width: 80px;
+            cursor: pointer;
           }
           .icon {
             @extend %in-b;
@@ -1112,6 +1179,7 @@ i {
       li {
         float: left;
         margin-right: 30px;
+        cursor: pointer;
       }
       .l-radio {
         text-align: center;
@@ -1140,6 +1208,7 @@ i {
         li {
           background: url(../images/nz-sz-icon_2.png) no-repeat left;
           padding-left: 24px;
+
           &.active {
             background: url(../images/nz-sz-icon_3.png) no-repeat left;
           }
@@ -1617,12 +1686,15 @@ i {
     height: 30px;
     color: #666666;
     margin-bottom: 20px;
-    span {
+    ul{
+      margin-right: -16px;
+    }
+    li {
       @extend %in-b;
       padding: 0 20px;
       border-radius: 4px;
       border: solid 1px #e4e4e4;
-      margin-right: 18px;
+      margin-right: 16px;
       cursor: pointer;
       &.cur,
       &:hover {
@@ -2084,11 +2156,11 @@ i {
     line-height: 36px;
     color: #333333;
     vertical-align: middle;
-    .icon{
+    .icon {
       @extend %in-b;
-      width: 21px; 
+      width: 21px;
       height: 24px;
-      background: url('../images/css_sprites.png') -331px -95px;
+      background: url("../images/css_sprites.png") -331px -95px;
       margin-right: 10px;
       vertical-align: middle;
     }
@@ -2280,87 +2352,123 @@ i {
   line-height: 32px;
   color: #ef544c;
 }
-.ns-wzzd{
-  .wzzd-title{
+.ns-wzzd {
+  padding-bottom: 30px;
+  .wzzd-title {
     font-size: 18px;
     font-weight: bold;
     line-height: 36px;
     color: #333333;
     vertical-align: middle;
-    &::before{
+    &::before {
       @extend %in-b;
-      content: '';
+      content: "";
       width: 4px;
       height: 18px;
-      background-image: linear-gradient(180deg, 
-        #13befd 0%, 
-        #237ce2 100%), 
-      linear-gradient(
-        #237ce2, 
-        #237ce2);
-      background-blend-mode: normal, 
-        normal;
+      background-image: linear-gradient(180deg, #13befd 0%, #237ce2 100%), linear-gradient(#237ce2, #237ce2);
+      background-blend-mode: normal, normal;
       border-radius: 2px;
       margin-right: 10px;
       vertical-align: middle;
     }
   }
-  .wzzd-list{
-    li{
+  .wzzd-list {
+    li {
       font-size: 14px;
-      a{
+      a {
         @extend %in-b;
         width: 100%;
         line-height: 36px;
         color: #333333;
         vertical-align: middle;
-        &::before{
+        &::before {
           @extend %in-b;
-          content: '';
+          content: "";
           width: 3px;
           height: 3px;
           background: $txt-color;
           margin-right: 10px;
           vertical-align: middle;
         }
-        &:hover{
+        &:hover {
           color: $txt-color;
         }
       }
-      .time{
+      .time {
         color: #999999;
         float: right;
       }
     }
-    .yc{
+    .yc {
       @extend %clearfix;
       line-height: 87px;
       border-bottom: 1px solid #eeeeee;
-      &:hover{
+      &:hover {
         background-color: #eff4f8;
       }
-      .mj, .hour{
+      .mj,
+      .hour {
         float: left;
       }
-      .mj{
+      .mj {
         margin-right: 80px;
       }
-      .hour{
+      .hour {
         color: #999999;
         vertical-align: middle;
       }
-      .icon1, .icon2{
+      .icon1,
+      .icon2 {
         @extend %in-b;
         vertical-align: middle;
         margin-right: 7px;
       }
-      .icon1{
-        width: 12px; height: 12px;
-        background: url('../images/css_sprites.png') -375px -218px;
+      .icon1 {
+        width: 12px;
+        height: 12px;
+        background: url("../images/css_sprites.png") -375px -218px;
       }
-      .icon2{
-        width: 12px; height: 12px;
-        background: url('../images/css_sprites.png') -375px -250px;
+      .icon2 {
+        width: 12px;
+        height: 12px;
+        background: url("../images/css_sprites.png") -375px -250px;
+      }
+    }
+    .teacher-slide {
+      width: 223px;
+      float: right;
+      position: relative;
+      a {
+        width: auto;
+        line-height: 87px;
+        &::before {
+          display: none;
+        }
+      }
+      .bd {
+        text-align: center;
+        img {
+          width: 48px;
+          height: 48px;
+          margin: 0 4px;
+          vertical-align: middle;
+        }
+      }
+      .prev,
+      .next {
+        font-size: 26px;
+        color: #237ce2;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .prev {
+        left: 0;
+      }
+      .next {
+        right: 0;
       }
     }
   }
@@ -2515,7 +2623,7 @@ i {
     .ul {
       @extend %align;
       display: none;
-      &.cur {
+      &.active {
         display: flex;
       }
       > li {
@@ -3501,6 +3609,7 @@ i {
 .box5 {
   border-top: 1px solid #e4e4e4;
   padding-top: 30px;
+  padding-bottom: 30px;
   h4 {
     line-height: 22px;
     font-size: 18px;
@@ -3597,7 +3706,7 @@ i {
         margin-bottom: 20px;
         overflow: hidden;
         width: 44%;
-        h4{
+        h4 {
           background: transparent;
           padding-left: 0;
           float: none;
@@ -5036,6 +5145,7 @@ ul.tk-list {
     border: solid 1px #e4e4e4;
     .module7-box {
       margin-top: 20px;
+      cursor: pointer;
       .tag-title {
         span {
           font-size: 16px;
