@@ -1,24 +1,6 @@
-'use strict';
+"use strict";
 
 $(function () {
-  /* 顶部导航菜单 */
-  function headerNavMenu(headEle, parentEle, contEle) {
-    $(headEle).hover(function () {
-      // 移入
-      var $this = $(this);
-      if ($(contEle, $this).size() >= 1 && $(contEle, $this).hasClass('hide')) {
-        $(contEle, $this).show();
-      }
-    }, function () {
-      // 父亲 li 移除
-      var $this = $(this);
-      if ($(contEle, $this).size() >= 1 && $(contEle, $this).hasClass('hide')) {
-        $(contEle, $this).hide();
-      }
-    });
-  }
-  // headerNavMenu('.nav-list > li', null, '.ns-menu');
-
   /* 鼠标移入切换 */
   function mouseenterTab(headEle, parentEle, contEle, className) {
     $(headEle).mouseenter(function () {
@@ -140,23 +122,3 @@ function CheckForm() {
   }
   return false;
 }
-
-$(function () {
-  /* 顶部导航菜单 */
-  function topbar(headEle, contEle) {
-    $(headEle).hover(function () {
-      // 移入
-      var $this = $(this);
-      if ($(contEle, $this).size() >= 1 && $(contEle, $this).hasClass('hide')) {
-        $(contEle, $this).show();
-      }
-    }, function () {
-      // 父亲 li 移除
-      var $this = $(this);
-      // if ($(contEle, $this).size() >= 1 && $(contEle, $this).hasClass('hide')) {
-      //   $(contEle, $this).hide();
-      // }
-    });
-  }
-  topbar('.nav-list > li', '.ns-menu');
-});
