@@ -121,11 +121,11 @@ i {
         }
       }
     }
-    
-    > li{
+
+    > li {
       line-height: 38px;
-      &:hover{
-        .ns-menu{
+      &:hover {
+        .ns-menu {
           display: block;
         }
       }
@@ -144,8 +144,8 @@ i {
     border-right: 1px solid #e4e4e4;
     border-bottom: 1px solid #e4e4e4;
     display: none;
-    a{
-      &:hover{
+    a {
+      &:hover {
         color: $txt-color;
       }
     }
@@ -295,7 +295,6 @@ i {
       padding-left: 78px;
     }
     input[type="submit"] {
-      float: left;
       width: 90px;
       height: 42px;
       line-height: 42px;
@@ -304,6 +303,9 @@ i {
       color: #fff;
       cursor: pointer;
       padding-left: 10px;
+    }
+    label {
+      float: left;
     }
     .submit-icon {
       @extend %in-b;
@@ -372,12 +374,12 @@ i {
     height: 30px;
     line-height: 30px;
     color: #666666;
-    &:hover{
+    &:hover {
       background-color: #eeeeee;
     }
-    &::before{
+    &::before {
       @extend %in-b;
-      content: '1';
+      content: "1";
       width: 14px;
       height: 14px;
       line-height: 14px;
@@ -388,34 +390,30 @@ i {
       border-radius: 50%;
       margin-right: 10px;
     }
-    
   }
-  li{
-    &:nth-of-type(2){
-      a{
-        &:before{
-          content: '2';
+  li {
+    &:nth-of-type(2) {
+      a {
+        &:before {
+          content: "2";
           background-color: #2db687;
         }
-        
       }
     }
-    &:nth-of-type(3){
-      a{
-        &:before{
-          content: '3';
+    &:nth-of-type(3) {
+      a {
+        &:before {
+          content: "3";
           background-color: #237ce2;
         }
-        
       }
     }
-    &:nth-of-type(4){
-      a{
-        &:before{
-          content: '4';
+    &:nth-of-type(4) {
+      a {
+        &:before {
+          content: "4";
           background-color: #a0a0a0;
         }
-        
       }
     }
   }
@@ -873,14 +871,21 @@ i {
           border-bottom: 1px solid #e4e4e4;
           box-sizing: border-box;
           line-height: 30px;
-          padding: 20px 0;
+          padding: 20px 10px;
+          box-sizing: border-box;
           &:first-child {
             flex: 1;
             font-size: 16px;
           }
         }
+        .font-red {
+          color: #ef544c;
+          &::before {
+            display: none;
+          }
+        }
         ul {
-          a {
+          li {
             &::before {
               @extend %in-b;
               content: "";
@@ -890,14 +895,6 @@ i {
               vertical-align: middle;
               margin-right: 10px;
             }
-            &:hover {
-              color: #ef544c;
-              &::before {
-                background-color: #ef544c;
-              }
-            }
-          }
-          li {
             &:last-child {
               a {
                 &::before {
@@ -931,7 +928,7 @@ i {
           }
         }
         .row-xk {
-          margin: 0 40px;
+          text-align: center;
           span {
             @extend %in-b;
             width: 80px;
@@ -1027,10 +1024,10 @@ i {
           }
         }
         .row-inline {
-          padding-left: 30px;
           li {
             width: 198px;
             float: left;
+            text-align: center;
           }
         }
       }
@@ -1128,6 +1125,10 @@ i {
       border-radius: 16px;
       .cont-item {
         @extend %clearfix;
+        display: none;
+        &.cur {
+          display: block;
+        }
         .item-ls {
           width: 238px;
           height: 276px;
@@ -1590,7 +1591,7 @@ i {
       @extend %clearfix;
       li {
         float: left;
-        padding: 0 20px;
+        padding: 0 15px;
         position: relative;
         a {
           @extend %in-b;
@@ -1625,7 +1626,9 @@ i {
       background-color: #ffffff;
       border: solid 1px #e4e4e4;
       position: absolute;
-      left: -30px;
+      left: 0;
+      right: 0;
+      margin: auto;
       z-index: 20;
       a {
         width: 100%;
@@ -1699,7 +1702,7 @@ i {
     height: 30px;
     color: #666666;
     margin-bottom: 20px;
-    ul{
+    ul {
       margin-right: -16px;
     }
     li {
@@ -1801,16 +1804,21 @@ i {
     margin-bottom: 20px;
   }
   .txt-btn {
-    text-align: center;
     margin-bottom: 20px;
+    text-indent: 20px;
     a {
       @extend %in-b;
       width: 304px;
       height: 62px;
+      line-height: 62px;
       background: url(../images/kd-zd_1.png) no-repeat center;
       margin: 0 10px;
+      padding-left: 88px;
+      box-sizing: border-box;
+      color: #a57317;
       &:nth-of-type(2) {
         background: url(../images/kd-zd_2.png) no-repeat center;
+        color: #376f88;
       }
     }
   }
@@ -1827,7 +1835,6 @@ i {
   line-height: 30px;
   padding: 20px 0;
   a {
-    display: block;
     color: #666666;
     &:hover {
       color: $txt-color;
@@ -2060,7 +2067,7 @@ i {
     }
     .sign-in {
       @extend %clearfix;
-      padding: 40px 0;
+      padding-top: 40px;
       input[type="submit"] {
         float: right;
         width: 170px;
@@ -2077,6 +2084,8 @@ i {
     }
     .zt-parse {
       border-top: 1px solid #eee;
+      margin-top: 40px;
+      display: none;
       .parse-sel {
         font-size: 16px;
         line-height: 36px;
@@ -2158,6 +2167,14 @@ i {
       position: absolute;
       bottom: -8px;
       left: 0;
+    }
+    &:hover {
+      background-color: #237ce2;
+      color: #fff;
+      &::after {
+        border-top: 4px solid #6baaf2;
+        border-left: 15px solid #6baaf2;
+      }
     }
   }
 }
@@ -2425,6 +2442,8 @@ i {
       }
       .mj {
         margin-right: 80px;
+        width: auto;
+        line-height: 87px;
       }
       .hour {
         color: #999999;
@@ -2499,12 +2518,22 @@ i {
       box-sizing: border-box;
       margin-right: 18px;
       margin-bottom: 20px;
+      font-size: 14px;
       h4 {
-        font-size: 14px;
         font-weight: normal;
         color: #333;
+        @extend %clearfix;
         i {
+          float: left;
+          width: 24px;
+          height: 21px;
           margin-right: 10px;
+          background: url(../images/3.png) no-repeat;
+        }
+        a {
+          float: left;
+          width: 165px;
+          @extend %one;
         }
       }
       p {
@@ -2529,7 +2558,6 @@ i {
     }
   }
 }
-
 /* 文章终端2 */
 .ns-zd-wd {
   .ns-zd-w {
@@ -2546,6 +2574,10 @@ i {
       background: url("../images/css_sprites.png") -54px -282px;
       vertical-align: middle;
       margin-right: 8px;
+    }
+    h1 {
+      @extend %in-b;
+      font-weight: bold;
     }
     .visit {
       float: right;
@@ -2577,6 +2609,96 @@ i {
   &:hover {
     background: #237ce2;
     color: #fff;
+  }
+}
+/* 答题弹窗 */
+.ns-tc{
+  width: 500px;
+  height: 399px;
+  padding: 16px 20px 20px;
+  box-sizing: border-box;
+  background: url(../images/ns-tc.png) no-repeat center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 20;
+  display: none;
+  .ns-tc-close{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+  }
+  .ns-tc-title{
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+    .tc-title1{
+      font-size: 24px;
+    }
+    .tc-title2{
+      font-size: 36px;
+      font-weight: bold;
+    }
+    em{
+      color: #fed101;
+      font-weight: bold;
+    }
+  }
+  .tc-form{
+    padding: 30px 30px 18px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 6px;
+    font-size: 16px;
+    label{
+      display: block;
+      height: 42px;
+      line-height: 42px;
+      margin-bottom: 20px;
+      span{
+        @extend %in-b;
+        width: 92px;
+        text-align: right;
+      }
+      input{
+        border: solid 1px #e4e4e4;
+        width: 300px;
+        height: 40px;
+      }
+    }
+    input[type='submit']{
+      border: none;
+      @extend %in-b;
+      width: 399px;
+      height: 48px;
+      line-height: 48px;
+      background-image: linear-gradient(135deg, 
+        #23cee2 0%, 
+        #237ce2 100%), 
+      linear-gradient(
+        #237ce2, 
+        #237ce2);
+      background-blend-mode: normal, 
+        normal;
+      box-shadow: 0px 3px 5px 0px 
+        rgba(35, 124, 226, 0.4);
+      border-radius: 24px;
+      margin-bottom: 20px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    .tc-hint{
+      font-size: 14px;
+      line-height: 36px;
+      color: #c6c6c6;
+      text-align: center;
+    }
   }
 }
 
@@ -3982,6 +4104,7 @@ i {
       position: relative;
       padding-left: 15px;
       float: left;
+      font-weight: bold;
       &:after {
         content: "";
         width: 4px;
@@ -4017,7 +4140,7 @@ i {
       margin-bottom: 20px;
       overflow: hidden;
       width: 100%;
-      a {
+      .list-txt {
         color: #333;
         position: relative;
         float: left;
@@ -4039,6 +4162,14 @@ i {
       }
       i {
         float: left;
+        color: #237ce2;
+        height: 18px;
+        background: url(../images/icon_48.png) no-repeat left center;
+        padding-left: 20px;
+        margin-left: 18px;
+      }
+      .intro {
+        // float: left;
         color: #237ce2;
         height: 18px;
         background: url(../images/icon_48.png) no-repeat left center;
@@ -4517,7 +4648,9 @@ ul.tk-list {
             display: none;
           }
           span {
+            width: 200px;
             font-size: 14px;
+            @extend %one;
           }
         }
         .gray-text {

@@ -17,6 +17,16 @@ $(function () {
   mouseenterTab(".ns-footer-nav .tab-head li", ".ns-footer-nav", ".cont-item", "cur");
   // 直播-列表页面 科目
   mouseenterTab(".ns-live-list .list-km li", null, null, "cur");
+  
+  // 功能完善的tab切换
+  function tabHandle(headBox, parentBox, contBox, className){
+    $(headBox).mouseenter(function(){
+      $(this).addClass(className).siblings().removeClass(className);
+      $(this).parents(parentBox).find(contBox).removeClass(className);
+      $(this).parents(parentBox).find(contBox).eq($(this).index()).addClass(className);
+    });
+  }
+  tabHandle('.zs-team .tab-head span', '.zs-team', '.cont-item', 'cur');
 
   // 多选框
   function checkboxHandle(aimEle, className){
@@ -102,6 +112,19 @@ $(function () {
   //   $('#text_one').val($(this).text());
   //   $(this).parents('#nsHot').hide();
   // });
+
+  // 答题之后显示答案
+  $('#submit').click(function(){
+    $('.parse-sel').show();
+  });
+
+  // 关闭答题弹窗
+  $('#tj').click(function(){
+    $("#answerPopup").show();
+  });
+  $('.ns-tc-close').click(function(){
+    $("#answerPopup").hide();
+  });
 });
 /* 搜索框 */
 function CheckForm() {
